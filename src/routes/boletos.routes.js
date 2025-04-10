@@ -1,15 +1,13 @@
-import { Router } from "express";
+const Router = require("express");
 
 const boletosRoutes = Router();
 
-boletosRoutes.post("/boletos", (req, res) => {
+boletosRoutes.post("/", (req, res) => {
   res.send("Voce chamou o POST /boletos");
-
 });
 
-boletosRoutes.get("/boletos", (req, res) => {
+boletosRoutes.get("/", (req, res) => {
   res.send("Voce chamou o GET /boletos");
-}
-);
+});
 
 module.exports = boletosRoutes;
